@@ -1,0 +1,115 @@
+<!-- 
+#what you can do?
+    #comparing prices
+    #satisfaction of customers
+    #generation potential leads
+    #scraping social site content looking for hot topics
+    #scraping cooking blogs for particular recipes
+    #automatically look through classified ads
+-->
+<!--
+#HTML(HyperText Markup Language)
+    #tag names(html, div,p) = attribute name
+    #<div id="unique-id" class="no need unique">
+    #<a href="https://www.datacamp.com">
+    #Tag: a, abbr, address, areas
+-->
+<!-- HTML code string-->
+<html>
+  <head>
+    <title>Website Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="class1" id="div1">
+      <p class="class2">
+        Visit <a href="http://datacamp.com/">DataCamp</a>!
+      </p>
+    </div>
+    <div class="class1 class3" id="div2">
+      <p class="class2">
+        Or search for it on <a href="http://www.google.com">Google</a>!
+      </p>
+    </div>
+  </body>
+</html>
+<!-- pathing 
+ "single slash(/): forward one generation
+ "double slash(//): forward all future generation
+ "square bracket([]): narrow in one specific element
+ "asterisks(*)": is everything below-->
+xpath'/html/body/div[2]'//table'<!--all table under second div-->
+xpath = '/html/body/div[2]/p'<!--second div-->
+xpath = '//p' <!--all paragraph-->
+xpath = '//span[@class="span-class"]' <!--span with class name "span-class-->
+xpath = '/html/body/*'
+
+xpath = '/html/body/*' <!-- number of all children of the body-->
+how_many_elements( xpath )
+
+<html>
+  <body>
+    <div>
+      <p>Hello World!</p>
+      <div>
+        <p>Choose DataCamp!</p>
+      </div>
+    </div>
+    <div>
+      <p>Thanks for Watching!</p>
+    </div>
+  </body>
+</html>
+<!--print "Choose DataCamp!-->
+xpath = '/html/body/div[1]/div/p'
+print_element_text( xpath )
+
+
+
+<!--Attribute(@): @class, @id, @href 
+contains(@attribute name , "string")-->
+xpath = '//p[@class="class-1"]'
+xpath = '/html/body/div/p[2]' = 'html/body/div/p[2]/@class'
+
+<html>
+  <body>
+    <div id="div1" class="class-1">
+      <p class="class-1 class-2">Hello World!</p>
+      <div id="div2">
+        <p id="p2" class="class-2">Choose DataCamp!</p>
+      </div>
+    </div>
+    <div id="div3" class="class-2">
+      <p class="class-2">Thanks for Watching!</p>
+    </div>
+  </body>
+</html>
+xpath = '//*[@id="div3"]/p'
+print_element_text(xpath)
+
+xpath='//p[@class="class-1 class-2"]'
+print_element_text( xpath )
+<html>
+  <body>
+    <div id="div1" class="class-1">
+      <p class="class-1 class-2">Hello World!</p>
+      <div id="div2">
+        <p id="p2" class="class-2">Choose 
+            <a href="http://datacamp.com">DataCamp!</a>!
+        </p>
+      </div>
+    </div>
+    <div id="div3" class="class-2">
+      <p class="class-2">Thanks for Watching!</p>
+    </div>
+  </body>
+</html>
+xpath = '//p[@id="p2"]/a/@href'
+print_attribute( xpath )
+
+<!--using contains-->
+xpath = '//a[contains(@class,"course-block")]/@href'
+how_many_elements( xpath )
+preview( xpath )
+
+
