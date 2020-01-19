@@ -7,7 +7,7 @@ second_p = ps[1]
 second_p.extract()
 #%%
 #Example of extract()
-rom scrapy import Selector
+from scrapy import Selector
 html = '''
 <html>
 <body>
@@ -163,10 +163,10 @@ class YourSpider( scrapy.Spider ):
     print( "Calling start_requests in YourSpider prints out:", msg )
 inspect_class( YourSpider )# Inspect Your Class
 
-
+#%%
 import scrapy
 class YourSpider( scrapy.Spider ):
-      name = "your_spider"
+  name = "your_spider"
   # start_requests method
   def start_requests( self ):
     yield scrapy.Request( url = "https://www.datacamp.com", callback = self.parse )
@@ -174,7 +174,7 @@ class YourSpider( scrapy.Spider ):
   def parse( self, response ):
     pass
 inspect_class( YourSpider )# Inspect Your Class
-
+#%%
 
 import scrapy
 class DCspider( scrapy.Spider ):
@@ -188,7 +188,7 @@ class DCspider( scrapy.Spider ):
     author_names=response.css('p.course-block__author-name::text').extract()
     return author_names
 inspect_spider( DCspider )# Inspect the spider
-
+#%%
 import scrapy
 class DCdescr( scrapy.Spider ):
   name = 'dcdescr'
