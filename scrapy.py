@@ -1,7 +1,8 @@
-from scrapy import Selector
+######################################################
 #extract(): extract all lists
 #extract_first(): first element of the list
-
+######################################################
+from scrapy import Selector
 ps = sel.xpath('//p')
 second_p = ps[1]
 second_p.extract()
@@ -121,7 +122,9 @@ how_many_kids = len( mystery.xpath( './*' ) )
 print( "The number of elements you selected was:", how_many_kids )
 
 #%%
+######################################################
 ##Inheriting Spider
+######################################################
 import scrapy
 class YourSpider(scrapy.Spider):
   name = "your_spider"
@@ -133,8 +136,9 @@ class YourSpider(scrapy.Spider):
     pass
 
 inspect_class(YourSpider)# Inspect Your Class
-
+######################################################
 ##Hurl the URLs
+######################################################
 import scrapy
 class YourSpider( scrapy.Spider ):
   name = "your_spider"

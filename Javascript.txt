@@ -1,0 +1,20 @@
+#Display alert
+#go to developer page > Console > type 'alert()' or 'alert("hi",1,2,3,4)
+
+#Indentation
+shift + enter
+
+#Making function
+function jocoding(){
+    alert("thank you");
+}
+#Run function
+jocoding()
+
+#jQuery
+
+
+
+
+
+#Bootstrap: make CSS easier
