@@ -49,5 +49,12 @@ class BlogSpider(scrapy.Spider):
         for next_page in response.css('a.next-posts-link'):
             yield response.follow(next_page, self.parse)
 #%%
+from selenium import webdriver
+from BeautifulSoup import BeautifulSoup
+import pandas as pd
 
+products=[] #List to store name of the product
+prices=[] #List to store price of the product
+ratings=[] #List to store rating of the product
+driver.get("https://www.flipkart.com/laptops/~buyback-guarantee-on-laptops-/pr?sid=6bo%2Cb5g&amp;amp;amp;uniq")
 # %%
