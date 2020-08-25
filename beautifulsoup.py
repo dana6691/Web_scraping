@@ -22,7 +22,7 @@ response = google_images_download.googleimagesdownload()
 arguments = {"keywords":"shrimp, crab", "limit":20, "print_urls":True, "format":"png"}
 paths = response.download(arguments) #passing arguments to the function
 print(paths)
-# %%
+#%%
 from scrapy import Selector
 class YourSpider( scrapy.Spider ):
   name = "your_spider"
@@ -35,7 +35,7 @@ class YourSpider( scrapy.Spider ):
   def parse( self, response ):
     pass
 
-# %%
+#%%
 import scrapy
 
 class BlogSpider(scrapy.Spider):
