@@ -20,20 +20,32 @@
 The final part is where you download and save the data in a CSV, JSON or in a database so that it can be retrieved and used manually or employed in any other program.
 
 <!-- LIBRARY -->
-## Python Libraries
+## Python Libraries Used
 * requests: retrieving content from a webpage(Get requests)
 * BeautifulSoup
 * Scrapy
 * Selenium
-* Project
+* google_images_download
+* re: regular expression operations
 
-
-## Table of contents
+<!-- Table of Contents -->
+## Table of Contents
 * BeautifulSoup
-  * Yahoo finance: scrape stock data and save on csv file
+   * Image scraping: most famous movies at each year from 2015 - 2019
+   * Yahoo finance: scrape stock data and save on csv file
+   * Naver stock: 
+   * Shopping List(,Coupang):
 * Scrapy
+   * Basic: how to use functions in Scrapy
 * Selenium
+   * Base: click, submit, page go back, go forward, refresh, and login using Selenium
+   * Flight_ticket: google flight, set destination and date of departure and returning, grab flights information
+   * Google_movie: list of google movie, display only discounted Movie, scroll the page to see all movies
 * Project
+   * Google_image.py: using google_image_download library
+   * Newsheadline_Weather: bring up-to-date news headlines and weather information
+   * RealEstate: location, size,and price of the houses in Minneapolis
+   * Search List: find a list of trending search words in naver.com
 
 ```python
 # requests for fetching html of website
