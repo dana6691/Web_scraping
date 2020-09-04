@@ -7,7 +7,7 @@
  Directly fetches the specific data and store it| Collecting as much information as possible 
 Apift SDK, Scrapy, BeautifulSoup|
 
-<br>
+
 <!-- WEb SCRAPING STEP -->
 ## Web Scraping
 1. **Request** the data through HTTP server, when we are requesting HTTP METHOD should be selected
@@ -19,7 +19,7 @@ Apift SDK, Scrapy, BeautifulSoup|
 1. **Download Data**
 The final part is where you download and save the data in a CSV, JSON or in a database so that it can be retrieved and used manually or employed in any other program.
 
-<br>
+
 <!-- LIBRARY -->
 ## Python Libraries Used
 * requests: retrieving content from a webpage(Get requests)
@@ -29,7 +29,7 @@ The final part is where you download and save the data in a CSV, JSON or in a da
 * google_images_download
 * re: regular expression operations
 
-<br>
+
 <!-- Table of Contents -->
 ## Table of Contents
 * BeautifulSoup
