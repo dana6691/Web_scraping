@@ -1,13 +1,13 @@
 <!-- Web scraping vs Web crawling -->
 ## Web scraping vs Web crawling
-| Web scraping  | Web crawling |
-| :---  | :---  |
-| Extracting data from from any source | Extracting data from websites in an automated manner. |
-| Any scale  | Large scale  |
-| directly fetches the specific data and store it| collecting as much information as possible |
-|Apift SDK, Scrapy, BeautifulSoup||
+ Web scraping  | Web crawling 
+ :---:  | :---:
+ Extracting data from any source | Extracting data from websites<br>in an automated manner. 
+ Any scale  | Large scale  |
+ Directly fetches the specific data and store it| Collecting as much information as possible 
+Apift SDK, Scrapy, BeautifulSoup|
 
-
+<br>
 <!-- WEb SCRAPING STEP -->
 ## Web Scraping
 1. **Request** the data through HTTP server, when we are requesting HTTP METHOD should be selected
@@ -19,6 +19,7 @@
 1. **Download Data**
 The final part is where you download and save the data in a CSV, JSON or in a database so that it can be retrieved and used manually or employed in any other program.
 
+<br>
 <!-- LIBRARY -->
 ## Python Libraries Used
 * requests: retrieving content from a webpage(Get requests)
@@ -28,17 +29,18 @@ The final part is where you download and save the data in a CSV, JSON or in a da
 * google_images_download
 * re: regular expression operations
 
+<br>
 <!-- Table of Contents -->
 ## Table of Contents
 * BeautifulSoup
-   * Image scraping: most famous movies at each year from 2015 - 2019
-   * Yahoo finance: scrape stock data and save on csv file
-   * Naver stock: 
-   * Shopping List(,Coupang):
+   * Image scraping: scrape famous movie posters of each year from 2015 - 2019
+   * Yahoo finance: scrape multiple pages of stock data and save on csv file
+   * Naver stock: scrape stock data (1-50)
+   * Shopping List(Ebay,Coupang): scrape multiple pages of laptop data with conditions
 * Scrapy
-   * Basic: how to use functions in Scrapy
+   * Basic: functions in Scrapy
 * Selenium
-   * Base: click, submit, page go back, go forward, refresh, and login using Selenium
+   * Basic: click, submit, page go back, go forward, refresh, and login using Selenium
    * Flight_ticket: google flight, set destination and date of departure and returning, grab flights information
    * Google_movie: list of google movie, display only discounted Movie, scroll the page to see all movies
 * Project
