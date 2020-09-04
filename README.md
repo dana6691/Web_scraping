@@ -1,35 +1,3 @@
-<!-- Web scraping vs Web crawling -->
-## Web scraping vs Web crawling
- Web scraping  | Web crawling 
- :---:  | :---:
- Extracting data from any source | Extracting data from websites<br>in an automated manner. 
- Any scale  | Large scale  |
- Directly fetches the specific data and store it| Collecting as much information as possible 
-Apift SDK, Scrapy, BeautifulSoup|
-
-
-<!-- WEb SCRAPING STEP -->
-## Web Scraping
-1. **Request** the data through HTTP server, when we are requesting HTTP METHOD should be selected
-   1. GET: everyone can see, using url
-      * GET is after '?', all the parameters are seperated with '&'
-      * ex) https://www.coupand.com/np/search?minPrice=1000&maxPrice=1000000&page=1
-   1. POST: conceived under the body
-1. **Parsing HTML**
-1. **Download Data**
-The final part is where you download and save the data in a CSV, JSON or in a database so that it can be retrieved and used manually or employed in any other program.
-
-
-<!-- LIBRARY -->
-## Python Libraries Used
-* requests: retrieving content from a webpage(Get requests)
-* BeautifulSoup
-* Scrapy
-* Selenium
-* google_images_download
-* re: regular expression operations
-
-
 <!-- Table of Contents -->
 ## Table of Contents
 * BeautifulSoup
@@ -49,6 +17,27 @@ The final part is where you download and save the data in a CSV, JSON or in a da
    * RealEstate: location, size,and price of the houses in Minneapolis
    * Search List: find a list of trending search words in naver.com
 
+<!-- Web scraping vs Web crawling -->
+## Web scraping vs Web crawling
+ Web scraping  | Web crawling 
+ :---:  | :---:
+ Extracting data from any source | Extracting data from websites<br>in an automated manner. 
+ Any scale  | Large scale  |
+ Directly fetches the specific data and store it| Collecting as much information as possible 
+Apift SDK, Scrapy, BeautifulSoup|
+
+
+<!-- WEb SCRAPING STEP -->
+## Web Scraping Procedure
+1. **Request** the data through HTTP server, when we are requesting HTTP METHOD should be selected
+   1. GET: everyone can see, using url
+      * GET is after '?', all the parameters are seperated with '&'
+      * ex) https://www.coupand.com/np/search?minPrice=1000&maxPrice=1000000&page=1
+   1. POST: conceived under the body
+1. **Parsing HTML**
+1. **Download Data**
+The final part is where you download and save the data in a CSV, JSON or in a database so that it can be retrieved and used manually or employed in any other program.
+
 ```python
 # requests for fetching html of website
 import requests
@@ -65,6 +54,17 @@ from bs4 import BeautifulSoup
 # Create a soup object
 soup = BeautifulSoup(c)
 ```
+
+<!-- LIBRARY -->
+## Python Libraries Used
+* requests: retrieving content from a webpage(Get requests)
+* BeautifulSoup
+* Scrapy
+* Selenium
+* google_images_download
+* re: regular expression operations
+
+
 
 
 
