@@ -12,6 +12,7 @@
    * Flight_ticket: google flight, set destination and date of departure and returning, grab flights information
    * Google_movie: list of google movie, display only discounted Movie, scroll the page to see all movies
 * Project
+   * linkinside.py: fetch all href links and collect the data from the links  
    * Google_image.py: using google_image_download library
    * Newsheadline_Weather: bring up-to-date news headlines and weather information
    * RealEstate: location, size,and price of the houses in Minneapolis
