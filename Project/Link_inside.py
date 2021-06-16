@@ -2,7 +2,7 @@
 Data scraping from sub-link
 1) Click 'More' button to expand 
 2) Extract the list of URLs
-3) Retrieve data from each URLs
+3) Retrieve data from each URLs and save on Excel file
 """
 
 import requests
