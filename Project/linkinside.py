@@ -22,6 +22,7 @@ more_button = driver.find_elements_by_xpath('//*[@id="locationResults"]/div[10]/
 more_button.click()	
 links = driver.find_elements_by_xpath('//*[@id="locationResults"]/div/div/div/a')
 links2 = driver.find_elements_by_xpath('//*[@id="locationResults"]/div/div/div/div/a')
+# Extract the list of URLs under hrefs
 hrefs = []
 for link in links:
     hrefs.append(link.get_attribute("href"))
