@@ -15,7 +15,6 @@ import xlsxwriter
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 driver = webdriver.Chrome(executable_path=r'C:\Users\daheekim\Downloads\chromedriver_win32\chromedriver.exe',options=options)
-#driver.get('https://www.dnb.com/business-directory/company-information.crop-production.us.html?page=1')
 driver.get('https://www.dnb.com/business-directory/company-information.cattle-ranching.us.montana.html?page=1')
 # Click the more button		
 more_button = driver.find_elements_by_xpath('//*[@id="locationResults"]/div[10]/button')[0]
