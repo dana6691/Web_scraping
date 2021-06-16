@@ -14,7 +14,7 @@
    * Pagination.py: scrap multiple pages of data and save data into xlsx file
 * Project
    * Sublink_scraping.py: fetch all href links and save the collected data from sublinks into xlsx file  
-   * Paginated_scraping.py: scraping multiple pages data using selenium and while loop
+   * Paginated_scraping.py: scraping multiple pages data using selenium and while loop. Save data in csv file.
    * Google_image.py: using google_image_download library
    * Newsheadline_Weather: bring up-to-date news headlines and weather information
    * RealEstate: location, size,and price of the houses in Minneapolis
